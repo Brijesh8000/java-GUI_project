@@ -9,11 +9,11 @@ import javax.swing.*;
     }
     void setComponent(){
         JFrame l1=new JFrame(" WELCOME THERE ");
-        JTextField t1= new JTextField();
+//        JTextField t1= new JTextField();
         setLayout(null);
-        t1.setBounds(200, 100, 100, 30);
-        t1.setBounds(200,200,100,30);
-        add(t1);
+        l1.setBounds(200, 100, 100, 30);
+//        t1.setBounds(200,200,100,30);
+//        add(t1);
         add(l1);
     }    
 }
