@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
+import java.util.Currency;
+
 class  Login1 extends  JFrame{
     JLabel l1,l2,l3,l4;
     JTextField t1;
@@ -12,12 +15,16 @@ class  Login1 extends  JFrame{
 
     }
     void setComponent(){
+        Cursor c1=new Cursor(Cursor.HAND_CURSOR);
+
+
         l1=new JLabel("Welcom to coding Seekho Institute ");
         l2=new JLabel("USERNAME ");
         l3=new JLabel("PASSWORD ");
         t1=new JTextField();
         t2=new JPasswordField();
         b1=new JButton("Login");
+        b1.setCursor(c1);
         b2=new JButton("Clear");
         b3=new JButton("Add");
         setLayout(null);
@@ -69,14 +76,14 @@ class  Login1 extends  JFrame{
 
         }
         class Clear implements ActionListener{
-            public void actionPerformed(ActionListener e1){
+            public void actionPerformed(ActionEvent e2){
                 t1.setText("");
                 t2.setText("");
             }
         }
 
         class Add implements ActionListener{
-            public void sctionPerformed(ActionEvent e1){
+            public void actionPerformed(ActionEvent e3){
                 try{
                     int a=Integer.parseInt(t1.getText());
                     int b=Integer.parseInt(t2.getText());
