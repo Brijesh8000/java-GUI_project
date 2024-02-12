@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
-import java.util.Currency;
 
 class  Login1 extends  JFrame{
     JLabel l1,l2,l3,l4;
