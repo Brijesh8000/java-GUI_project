@@ -61,6 +61,7 @@ public class list_iterator {
            }
        }
        catch (NoSuchElementException e1){
+           System.out.println("lllll");
 
        }
 
